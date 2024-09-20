@@ -4,62 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Busca de Pokémon</title>
 
     <style>
-        body{
+        body {
             text-align: center;
-            background-color: black;
+            background-color: rgb(255, 255, 255);
         }
 
-        img{
-            margin-top: 20px;
-            width: 300px;
+        #btnVoltar {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
         }
 
-        p{
-            color: white;
+        #btnAvancar {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        #busca img {
+            width: 20px;
+            height: 20px;
+        }
+
+       
+
+        p {
             font-size: 20px;
         }
 
-        input{
-            width: 200px;
-            
+        #Infos {
+            margin-top: 20px;
         }
 
-        #poke{
-            
+        img {
+            margin-top: 20px;
         }
     </style>
-  
-    
 </head>
 <body>
-    <h1>Busque pelo nome do Pokemon para ver suas informações</h1>
-    <input id="nome" type="text" placeholder="Quem é esse Pokémon?">
-    <button id="btn" >BUSCAR</button>
-   
-    <div id="Infos" >
+
+    <h1>Quem é esse pokemon?</h1>
+
+    <div id="busca">
+        <button id="btnVoltar">
+            <img src="imgs/pngegg back.png" alt="Voltar">
+        </button>
+
+        <input id="buscar" type="text" placeholder="Quem é esse Pokémon?">
         
 
+        <button id="btnAvancar">
+            <img src="imgs/pngegg.png" alt="Avançar">
+        </button>
+    </div>
+
+    <div id="Infos">
         <p>Este é o: <span id="poke"></span></p>
 
         <p>ID: <span id="id"></span></p>
 
-        <p>Ordem na pokedex:  <span id="pokedex"></span></p>
+        <p>Ordem na Pokédex: <span id="pokedex"></span></p>
 
         <p>Peso: <span id="peso"></span></p>
 
         <p>Altura: <span id="altura"></span></p>
 
-        
-
-        <img id="img" src="" alt="">
-
-      
-
+        <img id="imagem" src="" alt="Imagem do Pokémon">
     </div>
-    
+
     <script src="dode.js"></script>
 </body>
 </html>
